@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kon Khmer quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Cambodianess quiz!</h1>
+  <p>ឆ្លើយសំណួរនេះអោយបានត្រឹមត្រូវបើអ្នកជាកូនខ្មែរ</p>
+  <p id="question">slanh ke mnek eng men</p>
+  <input type="text" id="answerInput">
+  <button onclick="checkAnswer()">Check Answer</button>
+  <p id="result"></p>
+
+  <script>
+    function checkAnswer() {
+      var userAnswer = document.getElementById("answerInput").value.toLowerCase();
+      var correctAnswer = "yes";
+      if (userAnswer === correctAnswer) {
+        document.getElementById("result").innerHTML = "Chub tv ke ort slanh hg te";
+      } else {
+        document.getElementById("result").innerHTML = "Rk ss tmey tv";
+      }
+    }
+  </script>
+</body>
+</html>
