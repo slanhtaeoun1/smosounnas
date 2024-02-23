@@ -13,7 +13,7 @@
 <body>
   <h1>Welcome to Cambodianess quiz!</h1>
   <p>ឆ្លើយសំណួរនេះអោយបានត្រឹមត្រូវបើអ្នកជាកូនខ្មែរ</p>
-  <p id="question">slanh ke mnek eng men</p>
+  <p id="question">Slanh ke mnek eng men</p>
   <input type="text" id="answerInput">
   <button onclick="checkAnswer()">Check Answer</button>
   <p id="result"></p>
@@ -23,7 +23,7 @@
       var userAnswer = document.getElementById("answerInput").value.toLowerCase();
       var correctAnswer = "yes";
       if (userAnswer === correctAnswer) {
-        document.getElementById("result").innerHTML = "Chub tv ke ort slanh hg te";
+        document.getElementById("result").innerHTML = "Kit tha som men";
       } else {
         document.getElementById("result").innerHTML = "Rk ss tmey tv";
       }
